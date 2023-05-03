@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function compound_interset(p, r, n) {
+            var result = (p * Math.pow((1 + n / 100), n) - p);
+            console.log(result)
+            return (result + p);
+        }
+
+        // compound_interset(1000, 1, 1)
+        let p = parseInt(prompt("enter prinacipal"))
+        let r = parseInt(prompt("enter Rate of Interest"))
+        let n = parseInt(prompt("enter Number of year"))
+        let result = compound_interset(p, r, n)
+
+    </script>
+</head>
+
+<body>
+
+    <div class="decoration">
+        <p>
+            ------------------------------------------
+            <br>
+            ***Calculate Compound Interset***
+            <br>
+            ------------------------------------------
+            <br>
+        </p>
+    </div>
+    <table>
+        <tr>
+            <td>Principal </td>
+            <td>-</td>
+            <td>
+                <p id="Principal">
+                    <script>document.write(p);</script>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>Rate of Interest </td>
+            <td>-</td>
+            <td>
+                <p id="Interest">
+                    <script>document.write(r)</script>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>Period </td>
+            <td>-</td>
+            <td>
+                <p id="Period">
+                    <script>document.write(n)</script>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>Compoud Interest </td>
+            <td>-</td>
+            <td>
+                <p id="CI">
+                    <script>document.write(result)</script>
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
