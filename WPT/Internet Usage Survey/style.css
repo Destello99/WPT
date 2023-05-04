@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    border: 2px solid black;
+    margin-top: 6px;
+    padding-left: 5px;
+}
+.p-survey{
+    border: 2px solid rgb(255, 5, 5);
+  
+}
+.do-you-have{
+    border: 2px solid rgb(255, 0, 0);
+    
+}   
+.speed{
+    border: 2px solid rgb(232, 42, 42);
+    display: inline-block;  
+}
+.desktop{
+    border: 2px solid rgb(4, 46, 255);
+}
+.work-type{
+    border: 2px solid rgb(53, 250, 4);
+}
+.type-of-computer{
+    border: 2px solid rgb(255, 238, 0);
+}
+.reason-to-use{
+    border: 2px solid rgb(232, 42, 42);
+}
+.feild-1{
+    border: 2px solid rgb(2, 255, 204);
+}
+.feild-2{
+    border: 2px solid rgb(33, 3, 169);
+}
+.small-form{
+    border: 2px solid rgb(255, 138, 5);
+}
+.comment{
+ 
+    border: 2px solid rgb(97, 163, 3);
+    
+}
+.button{
+    border: 2px solid rgb(10, 2, 48);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Internet Usage Survey</h1>
+        <p class="p-survey">
+            A survey on internet usage is a tool to collect information about how
+            people use the internet, what devices they use, what activities they do
+            online, and what issues they face
+        </p>
+        <div class="do-you-have">
+            <p>
+                What type of internet do you have? <br>
+                (Select One)
+            </p>
+        </div>
+
+        <div class="speed">
+            <select name="type" id="internet-type" size="4" multiple>
+                <option value="dailup">Dail-Up</option>
+                <option value="dsl">DSL</option>
+                <option value="high">High Speed Cable</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="desktop">
+            <input type="radio" id="desktp"> <label for="desktp">Desktop</label>
+            <input type="radio" id="laptop"> <label for="laptop">Laptop</label>
+
+        </div>
+        <div class="work-type">
+            <input type="radio" id="activities"> <label for="activities">To do work-related activities</label> <br>
+            <input type="radio" id="school"> <label for="school">To do scool-related activities</label> <br>
+            <input type="radio" id="enter"> <label for="enter">For Enterainment puspose</label> <br>
+            <input type="radio" id="Other"> <label for="Other">Other activities</label> <br>
+
+        </div>
+        <div class="type-of-computer">
+            <p>What Type of Computer do you use most at home?</p>
+        </div>
+        <div class="reason-to-use">
+            <p>How would you describe your main reason for using the Internet?</p>
+        </div>
+        <fieldset class="feild-1">
+            <legend>Types of site you visited</legend>
+            <p>
+                What types of web sites do you access most often? <br />
+                Check all that apply:
+            </p>
+            <input type="checkbox" id="self" />
+            <label for="self">Self Improvement</label>
+            <br />
+            <input type="checkbox" id="enterntment" />
+            <label for="enterntment">Enterainment</label>
+            <br />
+            <input type="checkbox" id="news" />
+            <label for="news">News and Sports</label>
+            <br />
+            <input type="checkbox" id="refer" />
+            <label for="refer">Reference</label>
+            <br />
+            <input type="checkbox" id="email" /> <label for="email">Email</label>
+            <br />
+        </fieldset>
+
+        <fieldset class="feild-2">
+            <legend>Time spent using Internet</legend>
+            <p>During an average week, how long do you spend online?</p>
+            <input type="radio" id="3" /> <label for="3">0-3 Hours</label>
+            <br />
+            <input type="radio" id="4" /> <label for="4">0-3 Hours</label>
+            <br />
+            <input type="radio" id="6" /> <label for="6">4-6 Hours</label>
+            <br />
+            <input type="radio" id="10" /> <label for="10">7-10 Hours</label>
+            <br />
+            <input type="radio" id="14" /> <label for="14">11-14 Hours</label>
+            <br />
+            <input type="radio" id="15" /> <label for="15">15+ Hours</label>
+            <br />
+        </fieldset>
+        <div class="comment">
+            <label for="internet">Please comment on your opinions concerning Internet Privacy and
+                safty:</label>
+            <br />
+            <textarea name="privacy" id="internet" cols="30" rows="10"></textarea>
+        </div>
+        <div class="small-form">
+            <label for="name">Full Name:</label> <input type="text" id="name" />
+            <label for="last">Last Name:</label> <input type="text" id="last" />
+            <label for="Age">Age:</label> <input type="text" id="name" />
+            <label for="zip">Zip Code:</label> <input type="text" id="zip" />
+        </div>
+        <footer class="button">
+            <input type="submit" />
+            <input type="reset" id="clear" />
+        </footer>
+    </div>
+</body>
+
+</html>

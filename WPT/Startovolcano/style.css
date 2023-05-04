@@ -1,0 +1,24 @@
+.container {
+    border: 2px solid red;
+    padding: 5px;
+    margin: 5px;
+}
+
+.image1 .i1 {
+    width: 400px;
+    float: left;
+    padding-right: 12px;
+}
+.image1{
+    overflow: auto;
+}
+.image2{
+    overflow: auto;
+}
+.image2 .i2 {
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 400px;
+    
+}

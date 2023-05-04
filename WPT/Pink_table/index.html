@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="table">
+        <table border>
+            <tr>
+                <th>name</th>
+                <th><input type="text"></th>
+            </tr>
+            <tr>
+                <th>Employee <Code></Code></th>
+                <th><input type="text" class="emp-code"></th>
+            </tr>
+            <tr>
+                <th>Department<Code></Code></th>
+                <th>
+                    <input type="radio" id="admin">
+                    <label for="admin">ADMIN</label>
+                    <br>
+                    <input type="radio" id="hr">
+                    <label for="hr">HR</label>
+                    <br>
+                    <input type="radio" id="tech">
+                    <label for="tech">
+                    <Table>TECHNICAL</Table>
+                    </label>
+                    <br>
+                    <input type="radio" id="acc">
+                    <label for="acc">ACCOUNTS</label>
+                </th>
+            </tr>
+            <tr>
+                <th>Date of Joining</th>
+                <th>
+                    <input type="text" class="date-box">/ <input type="text" class="date-box">/ <input type="text" class="date-box">
+                    <br>
+                    <label class="date">dd</label>
+                    <label class="month">mm</label>
+                    <label class="year">yy</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Address
+                </th>
+                <th>
+                    <textarea rows="5"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    
+                    Tranning Programs Attended
+                </th>
+                <th>
+                    <input type="checkbox">HTML/DHTML
+                    <br>
+                    <input type="checkbox">JAVA
+                    <br>
+                    <input type="checkbox">CLIENT/SERVER
+                    <br>
+                    <input type="checkbox">.NET
+                    <br>
+                </th>
+            </tr>
+            <tr>
+                <th>Tranning Programs need to attend</th>
+                <th>
+                    <select name="city" id="city" size="2" multiple>
+                     <option value="pune">JAVASCRIPT</option>
+                     <option value="mumbai">CSS</option>
+                     <option value="html">HTML</option>
+                    </select><br>
+                    <label></label> 
+                </th>
+            </tr>
+            <tr>
+                <th>Send the Information at</th>
+                <th><a href="#">empinfo@patani.com</a></th>
+            </tr>
+        </table>
+        <footer>
+             <button>Submit</button>
+        </footer>
+    </div>
+</body>
+
+</html>
