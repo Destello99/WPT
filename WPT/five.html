@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .main{
+            background-color: palevioletred;
+            margin-top: 20%;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-bottom: 20%;
+        }
+        table{
+            width: 100%;
+        }
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+           
+          
+        }
+        .addressbox{scroll-behavior: auto;
+        display: block;}
+        
+        
+    </style>
+</head>
+<body> 
+    <div class="main">
+    <form>
+    <table >
+        
+          <tr>
+              <td> Name</td>
+              <td ><input type="text" id="txt" ></td>
+          </tr>
+          <tr>
+              <td>Employee code</td>
+              <td class="sp"><input type="text" style="width: 10px;"></td>
+          </tr> 
+          <tr>
+              <td>Department</td>
+              <td><input type="radio" id="a" name="ra">Admin<br>
+              <input type="radio" id="b">HR<br>
+              <input type="radio" id="c">Technical <br>
+              <input type="radio" id="d">Accounts<br>
+            </td>
+          </tr>
+          <tr>
+              <td>Date of joining</td>
+              <td ><input type="text" style="width: 10px; height: 8px;">&nbsp;/&nbsp;<input style="width: 10px; height: 8px;">&nbsp;/&nbsp;<input type="text" style="width: 10px; height: 8px;"><br>
+                     dd&nbsp;mm&nbsp;yyyy</td>
+
+          </tr> 
+          <tr >
+              <td>Address</td>
+              <td><textarea style ="overflow-y: scroll;" class="addressbox" ></textarea></td>
+          </tr>
+          <tr>
+              <td>Training Programm Attended</td>
+              <td>
+                  <input type="checkbox" > HTML<br>
+                  <input type="checkbox" > JAVA<br>
+                  <input type="checkbox" > CLIENT/SERVER<br>
+                  <input type="checkbox" > .NET<br>
+              </td>
+          </tr>
+          <tr>
+              <td>Training programs need to attend</td>
+              <td><textarea style ="overflow-y: scroll;" class="addressbox" ></textarea></td>
+          </tr>
+          <tr>
+              <td>send the information at</td>
+              <td><a href="empinfo@ptani.com">empinfo@ptani.com</a></td>
+          </tr>
+        
+    </table>
+</form>
+</div>
+</body>
+</html>

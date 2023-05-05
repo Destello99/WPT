@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table style="border: solid 1px blue;">
+       <tr>
+           <th colspan="2" align="left">
+           <b>Internet Usage Survey</b>
+        </th>
+        </tr>
+       <tr>
+           <td colspan="2">
+               The Survey is being conducted to help identify the Internet usage pattern of our customers.<br>
+               Please take a few moments to completeand submit this short form.Thank you for your cooperation.
+               <pre> </pre>
+           </td>
+       </tr>
+      
+       <tr style="height: 100px;">
+           <td style="width: 50%; padding: 10px;"> What type of internet connection do you have?<br>
+        (select one)</td>
+        <td style="text-align: left;">
+            <select name="op" id="op">
+                <option value="Dial">Dial-Up</option>
+                <option value="dsl">Dsl</option>
+                <option value="hsc">High Speed Cable</option>
+                <option value="other">Other</option>
+              </select>
+        </td>
+       </tr>
+       <tr  >
+           <td style="padding: 10px;">What type of computer do you use most at home?</td>
+           <td>
+               <input type="radio" id="ra"> <label for="ra">Desktop</label>
+               <input type="radio" id="rb"> <label for="rb">Laptop</label>
+           </td>
+       </tr>
+       <tr>
+           <td style="padding: 10px;">
+               How would you describe your main reason for using the internet?
+           </td>
+           <td>
+            <input type="radio" id="rd"> <label for="rd">To do work related activities</label><br>
+            <input type="radio" id="rc"> <label for="rc">To do school related activities</label><br>
+            <input type="radio" id="rf"> <label for="rf">For Entertainment purpose</label><br>
+            <input type="radio" id="rg"> <label for="rg">Other activities</label><br>
+           </td>
+       </tr>
+       <tr>
+           <td style="padding: 10px;">
+               <fieldset >
+                   <legend>Types of sites visited</legend>
+                   <p>
+                   what types of sites do you access most often?<br>
+                   Check all that apply:</p>
+                   
+                   <input type="radio" id="one"><label for="one">Self Improvement</label><br>
+                   <input type="radio" id="two"><label for="two">Entertainment</label><br>
+                   <input type="radio" id="three"><label for="three">News and sports</label><br>
+                   <input type="radio" id="fourth"><label for="fourth">Reference</label><br>
+                   <input type="radio" id="fifth"><label for="fifth">Email</label><br>
+                   
+
+                   
+               </fieldset >
+           </td>
+           <td style="padding: 20px;">
+            <fieldset>
+                <legend>Time spend using internet</legend>
+                <p>
+                    
+                 During an average week how long do you spend online?   
+                <br>
+             <br> </p>
+                
+                <input type="radio" id="one"><label for="one">0-3 Hours</label><br>
+                <input type="radio" id="two"><label for="two">4-6 Hours</label><br>
+                <input type="radio" id="three"><label for="three">7-10 Hours</label><br>
+                <input type="radio" id="fourth"><label for="fourth">11-14 Hours</label><br>
+                <input type="radio" id="fifth"><label for="fifth">15+ Hours</label><br>
+                
+
+                
+            </fieldset>
+        </td>
+       </tr>
+       <tr style="height: 100px;">
+        <td colspan="2" style="padding: 10px;">
+            Please comment on your opinions concerning Internet privacy and safety:<br>
+            <input type="text" style="width: 70%; height: 100px;";>     
+
+        </td>   
+       </tr>
+       <tr>
+           <td style="padding: 10px;">
+               <p>
+               First Name <input type="text" style="width: 66%;">
+            </p>
+           </td>
+
+           <td>
+            <p>
+            Last Name <input type="text" style="width: 66%;">
+         </p>
+        </td>
+       </tr>
+
+       <tr>
+        <td style="padding: 10px;">
+            <p>
+            Age <input type="text" style="width: 20%;">
+         </p>
+        </td>
+        
+        <td>
+            <p>
+            Zip Code <input type="text" style="width: 20%;">
+         </p>
+        </td>
+        
+       </tr>
+
+       <tr>
+           <td style="text-align: right;">
+               <button>Click to Submit</button>
+           </td>
+
+           <td>
+            <button>Clear Form</button>
+        </td>
+       </tr>
+   </table> 
+</body>
+</html>

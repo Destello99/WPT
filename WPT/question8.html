@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <style>
+      body {
+        /* height:100%;
+            width:100%; */
+
+        
+        display: inline-block;
+      }
+      .container {
+        /* align-items: center;
+            display: flex;
+            justify-content: center; */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border: 5px solid black;
+      }
+      #t1 {
+        text-align-last: center;
+      }
+      #i1 {  
+        width: 210px;
+        height: 200px;
+      }
+      #i2 {
+        margin-left: 50px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class ="container">
+    <div>
+      <form>
+        <h3>This is the feedback form for any innconvinience in services</h3>
+        <h4>Please fill the following details.</h4>
+
+        <table>
+          <tr>
+            <td>Type of problem</td>
+            <td>
+              <input type="radio" name="w" />Technical <br />
+              <input type="radio" name="w" />Product not available <br />
+              <input type="radio" name="w" />missing information <br />
+            </td>
+          </tr>
+          <tr>
+            <td>Username</td>
+            <td><input type="text" required /></td>
+          </tr>
+          <tr>
+            <td>emailid</td>
+            <td><input type="email" required /></td>
+          </tr>
+          <tr>
+            <td>Location</td>
+            <td><input type="text" required /></td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td><input type="tel" /></td>
+          </tr>
+          <tr>
+            <td>Description of problem</td>
+            <td>
+              <textarea rows="6" cols="28" value="empty" required></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="submit" id="i2" /></td>
+            <td><input type="reset" value="reset" id="i2" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+</div>
+  </body>
+</html>
