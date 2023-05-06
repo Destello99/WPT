@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var employee = []
+        function addemp() {
+            var emp =
+            {
+                name: document.getElementById("name").value,
+                salary: parseInt(document.getElementById("salary").value)
+            }
+            employee.push(emp)
+            console.log(employee)
+            document.getElementById("name").value = ""
+            document.getElementById("salary").value = ""
+
+
+
+        }
+        function display() {
+            let str = "";
+            for (let i = 0; i < employee.length; i++) {
+                str += employee[i].salary + " " + employee[i].name + "<br>";
+            }
+
+            document.getElementById("dis").innerHTML = str;
+        }
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Employee Name</td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td>Salary</td>
+            <td><input type="text" id="salary" name="salary"></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="btn" name="btn" onclick="addemp()">Button</button></td>
+            <td><button type="button" id="display" name="btn" onclick="display()">Display</button></td>
+        </tr>
+    </table>
+    <div id="dis"></div>
+
+</body>
+
+</html>
