@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMP</title>
+    <script>
+        var names = [];
+        function displayNames(arr = names) {
+            var str = "<ul>"
+            for (var ob of arr) {
+                str += "<li>" + ob + "</li>"
+            }
+            str += "</ul>"
+            document.getElementById("mydiv").innerHTML = str;
+        }
+        function validatNames() {
+            var name = document.getElementById("txt").value;
+            var nm = name.trim();
+            if (/^[a-zA-Z]*$/.test(name) && name == nm)
+                return true;
+            else
+                return false
+        }
+
+        function addNames() {
+            var flag = validatNames();
+            //alert(flag)
+            if (flag) {
+                var emp = document.getElementById("txt").value;
+                names.push(emp);
+                displayNames();
+                document.getElementById("txt").value = "";
+                document.getElementById("txt").focus();
+            }
+            else
+                alert("Enter valid name")
+        }
+
+        function sortnames() {
+            var sorted = names.sort()
+            displayNames(sorted);
+        }
+        function aname(event) {
+            //  alert("0");
+            // alert(typeof event.which) ;
+            if (event.which === 13) {
+                // alert("1");
+                addNames();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    enter names <input type="text" id="txt" name="nm" onkeypress="aname(event)">
+    <button id="btn" onclick="addNames()">Add</button>&nbsp;<button id="bt" onclick="sortnames()">sort</button>
+    <div id="mydiv">
+
+    </div>
+</body>
+
+</html>
