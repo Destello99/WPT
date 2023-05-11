@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="server.js"></script>
+</head>
+
+<body>
+    <form action="/submit-data">
+        Number1 :<input type="text" id="num1" name="num1"><br>
+        Number2 :<input type="text" id="num2" name="num2"><br>
+        <input type="radio" name="cal" id="add" value="add">Add
+        <input type="radio" name="cal" id="sub" value="sub">Sub
+        <input type="radio" name="cal" id="mul" value="mul">Mul
+        <input type="radio" name="cal" id="div" value="div">Div
+        <input type="radio" name="cal" id="seq" value="seq">Square
+        <br>
+    
+        <button type="submit" name="btn" value="calculate">calculate</button>
+    </form>
+        <hr>
+        <form action="/add_array" name="f2">
+            Add Number: <input type="text" name="arr" id="a1">
+            <input type="hidden" name="arrHdn" />
+            <button type="button" id="btn" value="arr">add into array to calculate</button>
+            <br>
+            <button type="button" name="btn" value="add_arr" id="get_sum">get Sum</button>
+        </form>
+    <script>
+        var arr = [];
+        var a=0;
+        var sum = document.getElementById("btn");
+        var get_sum = document.getElementById("get_sum");
+        sum.addEventListener("click", function () {
+             a= parseInt(document.getElementById("a1").value);
+            arr.push(a);
+            document.getElementById("a1").value = "";
+            // console.log(arr);
+        });
+
+        get_sum.addEventListener("click", function () {
+            document.f2.arrHdn.value = arr;
+            document.f2.submit();
+            // console.log(arr);
+        });
+        
+    </script>
+</body>
+
+</html>
